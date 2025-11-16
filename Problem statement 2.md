@@ -498,7 +498,7 @@ Execute the Docker Build Command: Run the docker build command from the root of 
 
 Bash
 
-
+docker rm voyage-website (to remove previous container)
 
 # docker build -t voyage-agency:latest .
 
@@ -529,13 +529,7 @@ Step 3: Run the Docker Container and Verify (Part d)
 This final step launches the server using the image and maps the internal web port to your host machine's port.
 
 
-
-Run the Container: Run the image you just built, mapping the container's internal port 80 (where Nginx is listening) to an available port on your host machine, such as 8080.
-
-
-
 Bash
-
 
 
 # **docker run -d -p 8085:80 --name voyage-website voyage-agency:latest**
@@ -573,4 +567,5 @@ Verify Website Accessibility: Open your web browser and enter the following addr
 http://localhost:8080
 
 You should see the "Voyage Agency" homepage displayed, confirming the deployment was successful. You can click on "Destinations" to verify the second page is also served correctly.
+
 
