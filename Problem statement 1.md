@@ -26,15 +26,7 @@ Click the + icon in the top-right corner and select "New repository".
 
 
 
-Give it a name (e.g., personal-portfolio).
-
-
-
-Make it Public (or Private, but Public is simpler for Jenkins access).
-
-
-
-Do not initialize it with a README, .gitignore, or license.
+Give it a name (e.g., personal-portfolio)
 
 
 
@@ -212,7 +204,7 @@ If it's successful, you'll see "Pipeline finished successfully" in the logs, and
 
 ## 
 
-## ngrok config add-authtoken (use your authtoken)
+## ngrok config add-authtoken 35VrWpvQLFppjYF6gEu5I87s7bz_31fxiKq6k1jq6FTsGyJVw
 
 ## 
 
@@ -228,7 +220,7 @@ This is the final step: making GitHub automatically tell Jenkins to build every 
 
 
 
-Get Your Jenkins URL:
+Get Your ngrok URL:
 
 
 
@@ -236,7 +228,7 @@ Your Jenkins server's URL. It must be accessible from the public internet for Gi
 
 
 
-## The full webhook URL will be: https://<YOUR\_JENKINS\_IP\_OR\_DOMAIN>/github-webhook/
+## The full webhook URL will be: https://<YOUR\_ngrok\_IP\_OR\_DOMAIN>/github-webhook/
 
 
 
@@ -272,9 +264,6 @@ Content type: Change this to application/json.
 
 
 
-Which events would you like to trigger this webhook? Select "Just the push event." This is the default and what you want.
-
-
 
 Click "Add webhook".
 
@@ -288,7 +277,7 @@ Go to your Jenkins dashboard (e.g., http://localhost:8080).
 
 
 
-Click on your job, portfolio-pipeline.
+Click on your job, portfolio-pipeline. (jenkins)
 
 
 
@@ -296,7 +285,7 @@ Click "Configure" on the left-hand menu.
 
 
 
-Scroll down to the "Build Triggers" section.
+Scroll down to the "Triggers" section.
 
 
 
@@ -787,4 +776,5 @@ pipeline {
     }
 
 }
+
 
