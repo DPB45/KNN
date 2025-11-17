@@ -24,21 +24,7 @@ Bash
 
 # git commit -m "feat: Add initial HTML website files and Dockerfile"
 
-# Push to GitHub (for repository creation):
-
-
-
-Create a new, empty repository on GitHub (e.g., voyage-agency).
-
-
-
-Follow the instructions provided by GitHub to link your local repository and push the files:
-
-
-
 Bash
-
-
 
 # git remote add origin <YOUR\_GITHUB\_REPO\_URL>
 
@@ -131,6 +117,7 @@ Verify Website Accessibility: Open your web browser and enter the following addr
 http://localhost:8085
 
 You should see the "Voyage Agency" homepage displayed, confirming the deployment was successful. You can click on "Destinations" to verify the second page is also served correctly.
+
 
 
 
