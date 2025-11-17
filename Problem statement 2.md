@@ -1,21 +1,6 @@
 
 
 
-Step 1: Project Setup and GitHub Preparation (Part b)
-
-This step ensures your website files are ready to be managed by Git and Docker.
-
-
-
-Navigate to Your Project Directory: Open your terminal or command prompt and change the directory to your project folder.
-
-
-
-Bash
-
-
-
-# cd travel-agency-docker
 
 Initialize Git: Start tracking your project files with Git.
 
@@ -146,6 +131,7 @@ Verify Website Accessibility: Open your web browser and enter the following addr
 http://localhost:8085
 
 You should see the "Voyage Agency" homepage displayed, confirming the deployment was successful. You can click on "Destinations" to verify the second page is also served correctly.
+
 
 
 
